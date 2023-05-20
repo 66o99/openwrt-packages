@@ -10,31 +10,14 @@
 
 <img src="https://v2.jinrishici.com/one.svg?font-size=24&spacing=2&color=Black">
 
-#### 说明 
-
-<br>中文 | [English](README_en.md)
-
-* 喜欢追新的可以去下载small-package，该仓库每天自动同步更新
-
-* [small-package仓库地址](https://github.com/kenzok8/small-package) 
-
-* 软件不定期同步大神库更新，适合一键下载用于openwrt编译
 
 
-##### 插件每日更新下载:
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/kenzok8/compile-package?style=for-the-badge&label=插件更新下载)](https://github.com/kenzok8/compile-package/releases/latest)
-
-+ [passwall依赖](https://github.com/kenzok8/small)
-
-+ [xiaorouji仓库](https://github.com/xiaorouji/openwrt-passwall)
-
-+ 谢谢 **kiddin9珠玉在前**[openwrt固件与插件下载](https://op.dllkids.xyz/op/firmware/)
 
 #### 使用
 一键命令
 ```yaml
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/66o99/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/66o99/small' feeds.conf.default
 git pull
 ./scripts/feeds update -a
 ./scripts/feeds install -a
@@ -69,21 +52,3 @@ make menuconfig
 | luci-app-aliyundrive-webdav  | Aliyun Disk WebDAV Service            |  阿里云盘 WebDAV 服务   |
 | luci-app-amlogic  | Amlogic Service             |  晶晨宝盒   |
 * 修改argon为argonne，包括argonne-config，为防止同名argon，而影响编译
-
-![暗黄主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-9.jpg)
-![暗黄主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-10.jpg)
-![暗黄主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-11.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-5.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-6.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-7.jpg)
-![暗黑红主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-8.jpg)
-![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-12.jpg)
-![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-13.jpg)
-![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-14.jpg)
-![argon主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-1.png)
-![argon主题](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/sshot-2.png)
-![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-719.png)
-![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-722.png)
-![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-720.png)
-![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/kenzok8/main/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-721.png)
-
