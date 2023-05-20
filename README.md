@@ -1,15 +1,22 @@
 
 
+
 #### 使用
+
+
 一键命令
 ```yaml
+
 sed -i '$a src-git kenzo https://github.com/66o99/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/66o99/small' feeds.conf.default
-git pull
+
+#git pull 无效命令
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make menuconfig
 ```
+
 
 - openwrt 固件编译自定义主题与软件
 
@@ -38,4 +45,4 @@ make menuconfig
 | luci-app-unblockneteasemusic | Unlock NetEase Cloud Music         | 解锁网易云音乐   |
 | luci-app-aliyundrive-webdav  | Aliyun Disk WebDAV Service            |  阿里云盘 WebDAV 服务   |
 | luci-app-amlogic  | Amlogic Service             |  晶晨宝盒   |
-* 修改argon为argonne，包括argonne-config，为防止同名argon，而影响编译
+
