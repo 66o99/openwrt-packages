@@ -17,6 +17,18 @@ sed -i '$a src-git small https://github.com/66o99/small' feeds.conf.default
 make menuconfig
 ```
 
+在已经跑过一边的机器上，进入到 /package 目录下
+```yaml
+
+//拉取插件包
+git clone https://github.com/66o99/openwrt-packages.git
+//拉取依赖包
+git clone https://github.com/66o99/small.git
+//选择要编译的插件
+make menuconfig  > 选中<M>不编译进固件！
+//开始编译
+make package/luci-app-ssr-plus/compile v=99
+```
 
 - openwrt 固件编译自定义主题与软件
 
