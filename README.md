@@ -59,3 +59,13 @@ make package/luci-app-ssr-plus/compile v=99
 | luci-app-aliyundrive-webdav  | Aliyun Disk WebDAV Service            |  阿里云盘 WebDAV 服务   |
 | luci-app-amlogic  | Amlogic Service             |  晶晨宝盒   |
 
+
+
+##### 插件每日更新下载:
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/kenzok8/small?style=for-the-badge&label=插件下载)](https://github.com/kenzok8/small/releases/latest)
+
++ [ssr+passwall依赖仓库](https://github.com/kenzok8/small)
+
++ [openwrt固件与插件下载](https://op.dllkids.xyz/)
+
++ 
